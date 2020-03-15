@@ -8,6 +8,12 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <EditText
+        android:id="@+id/keyword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
 
     <Button
         android:layout_width="match_parent"
@@ -33,11 +39,18 @@
         android:text="Query"
         android:onClick="query"
         />
-    <TextView
-        android:id="@+id/data"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        />
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+
+    </ScrollView>
 
 
 </LinearLayout>
